@@ -1,0 +1,70 @@
+body {
+  background: #ccc;
+}
+
+.card-wrap {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.card1, .card2, .card3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.card1 {
+  z-index: 1;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  transform-origin: center;
+  width: 320px;
+  height: 480px;
+}
+
+.card2 {
+  z-index: 2;
+  transform: translate(-50%, -50%) rotate(-15deg);
+  transform-origin: center;
+  width: 320px;
+  height: 480px;
+}
+
+.card3 {
+  z-index: 3;
+  transform: translate(-50%, -50%) rotate(-10deg);
+  transform-origin: center;
+  width: 320px;
+  height: 480px;
+}
+
+#board {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 200px;
+  z-index: 99;
+}
+
+.svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  width: 100vw;
+  height: 200px;
+}
+
+/* #clip01 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.path {
+  fill-rule: evenodd;
+}

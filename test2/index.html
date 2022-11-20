@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+  <div class="card-wrap">
+    <div class="card1"><img src="img/card01.png" alt=""></div>
+    <div class="card2"><img src="img/card02.png" alt=""></div>
+    <div class="card3"><img src="img/card03.png" alt=""></div>
+  </div>
+  <div class="text text-black">
+    <img src="img/text-black.svg" alt="">
+  </div>
+  <svg class="text text-white">
+    <clipPath id="clip01">
+      <rect class="card1"></rect>
+      <rect class="card2"></rect>
+      <rect class="card3"></rect>
+    </clipPath>
+    <image xlink:href="img/text-white.svg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" clip-path="url(#clip01)"/>
+    <!-- <text x="0" y="35" font-family="Verdana" font-size="120">
+      SAMPLE TEXT
+    </text> -->
+  </svg>
+
+  <div class="text-appear">
+    <p class="text-appear-text">TEST&nbsp;SAMPLE</p>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>

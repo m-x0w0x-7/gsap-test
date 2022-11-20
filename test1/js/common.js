@@ -1,0 +1,26 @@
+gsap.timeline({ repeat: -1 })
+  // 続けて動かしたい要素を追加
+  .to(".card3", { x: 100, y: -100, duration: 1 })
+  .to(".card3", { opacity: 0, duration: 1 }, "-=0.4")
+  .to(".card1", { zIndex: 2, rotate: "random(-30, -15)" }, "-=1")
+  .to(".card2", { zIndex: 3, rotate: "random(-30, -15)" }, "-=1")
+  .to(".card3", { zIndex: 1, rotate: -30 })
+  .to(".card3", { x: -150, y: 100, duration: 1 })
+  .to(".card3", { x: 0, y: 0, opacity: 1, duration: 1 }, "-=0.4")
+  // 2枚目
+  .to(".card2", { x: 100, y: -100, duration: 1 })
+  .to(".card2", { opacity: 0, duration: 1 }, "-=0.4")
+  .to(".card3", { zIndex: 2, rotate: "random(-30, -15)" }, "-=1")
+  .to(".card1", { zIndex: 3, rotate: "random(-30, -15)" }, "-=1")
+  .to(".card2", { zIndex: 1, rotate: -15 })
+  .to(".card2", { x: -150, y: 100, duration: 1 })
+  .to(".card2", { x: 0, y: 0, opacity: 1, duration: 1 }, "-=0.4")
+  // 3枚目
+  .to(".card1", { x: 100, y: -100, duration: 1 })
+  .to(".card1", { opacity: 0, duration: 1 }, "-=0.4")
+  .to(".card2", { zIndex: 2, rotate: "random(-30, -15)" }, "-=1")
+  .to(".card3", { zIndex: 3, rotate: "random(-30, -15)" }, "-=1")
+  .to(".card1", {zIndex: 1, rotate: -10 })
+  .to(".card1", { x: -150, y: 100, duration: 1 })
+  .to(".card1", { x: 0, y: 0, opacity: 1, duration: 1 }, "-=0.4")
+
